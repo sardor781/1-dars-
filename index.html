@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+        .animate-bounce {
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+    </style>
+</head>
+<body class="pl-24 pr-12 pt-9">
+
+    <header>
+        <div class="flex gap-5">
+            <input type="text" id="name" class="w-[200px] border border-solid border-gray-400 rounded-lg shadow-xl p-4" placeholder="Name">
+            <input type="number" id="number" class="w-[200px] border border-solid border-gray-400 rounded-lg shadow-xl p-4" placeholder="Number">
+            <button id="btn" class="rounded-lg bg-[#423CF2] text-center text-white text-lg font-medium p-3">Add Contact</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-20"> 
+            <div>
+                <ul id="ul" class="flex flex-col gap-5">
+                    <!-- <li class=" px-5 flex items-center justify-center gap-3">
+                        <div class=" w-10 h-10">
+                            <img src="images/image.png" class="w-12 h-12" alt="">
+                        </div>
+                        <div class="border-b border-solid border-gray-400 w-[97%] pb-2 flex justify-between items-center pr-5 py-5">
+                            <div class="flex flex-col gap-1">
+                                <h1 class="font-medium text-lg ">Name</h1>
+                                <span class="font-medium text-sm text-[#8A8A8D]">Number/Username</span>
+                            </div>
+                            <div class="flex items-center gap-9">
+                                <img src="images/image copy.png" class="w-6 h-6 cursor-pointer" alt="">
+                                <img src="images/image copy 2.png" class="w-4 h-5 cursor-pointer" alt="">
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- <div id="loader" class="absolute inset-0 flex justify-center items-center bg-white bg-opacity-10 z-50 hidden">
+    <div class="flex space-x-2">
+        <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style="animation-delay: 0s;"></div>
+        <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+        <div class="w-4 h-4 bg-blue-500 rounded-full animate-bounce" style="animation-delay: 0.4s;"></div>
+    </div>
+</div> -->
+
